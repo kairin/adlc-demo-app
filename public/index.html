@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Order Tracker Demo</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <div class="banner" role="note">
+      Demo app with fictional data. No real payments, shipping, or customers. The status buttons
+      are demo controls, not a model for production authorization.
+    </div>
+    <header class="top">
+      <a href="#/" class="brand">Order Tracker</a>
+      <span class="customer">Signed in as <strong>Demo Customer</strong> (fictional)</span>
+      <nav>
+        <a href="#/">Orders</a>
+        <a href="#/new" class="button primary">New order</a>
+      </nav>
+    </header>
+    <main id="app" aria-live="polite"></main>
+    <div id="toast" class="toast" role="status" hidden></div>
+  </body>
+</html>
