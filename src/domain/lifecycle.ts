@@ -20,7 +20,7 @@ export function canTransition(from: OrderStatus, to: OrderStatus): boolean {
 }
 
 export function canCancel(status: OrderStatus): boolean {
-  return !isTerminal(status);
+  return canTransition(status, "cancelled");
 }
 
 export function assertTransition(from: OrderStatus, to: OrderStatus): void {
