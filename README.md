@@ -17,6 +17,10 @@ Run the checks:
 pnpm lint && pnpm typecheck && pnpm test && pnpm build
 ```
 
+CI (`.github/workflows/ci.yml`) runs the same checks on every pull request and on
+pushes to `main`. GitHub turns Actions off on new forks: open your fork's
+**Actions** tab once and enable workflows.
+
 ## What it does
 
 - Browse a small fictional catalog and place orders (server-calculated totals,
